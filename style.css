@@ -1,0 +1,1413 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background-color: whitesmoke;
+  }
+  @keyframes fadeIn{
+    0% {
+      opacity: 0;
+      transform: translateX(-25px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0px);
+   }
+  }
+  
+  @keyframes fadeIn2{
+    0% {
+      opacity: 0;
+      transform: translateY(25px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0px);
+   }
+  }
+  
+  @keyframes fadeIn3{
+    0% {
+      opacity: 0;
+      transform: translateY(-25px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0px);
+   }
+  }
+  
+  
+  
+    /*------------------- Navigation Bar ------------------*/
+  .nav-content{
+    position: relative;
+    width: 100%;
+    padding-left: 6%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    background: rgb(197, 250, 232);
+  }
+  
+  .nav-content .nav-bar{
+    animation: fadeIn2 ease .3s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .nav-content .nav-bar h2{
+    margin-left: 10px;
+    color: #28b67e;
+    font-family: Product Sans;
+    font-size: 20px;
+  }
+  @font-face{
+    font-family: Product Sans;
+    src: url(Product\ Sans\ Bold.ttf);
+    font-weight: bold;
+  }
+  .logo{
+    width: 30px;
+    height: 32px;
+    cursor: pointer;
+    margin: 15px 0;
+  }
+  nav{
+    flex: 1;
+    text-align: right;
+  }
+  nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 60px;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: #14583d;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: Arial;
+  
+    transition: all .4s ease;
+  }
+  nav ul li a:hover{
+    color:  #30d291;
+  }
+  
+  /*front text*/
+  .container{
+    margin-top: 140px;
+    margin-left: 85px;
+    animation: fadeIn ease 1s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+  }
+  .container .text{
+    font-family: sans-serif;
+  }
+  .container .text .t1{
+    line-height: 55px;
+    font-size: 24px;
+    font-weight: 200;
+    color: #28b67e;
+  }
+  .container .text .t2{
+    line-height: 45px;
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+  }
+  .container .text .t3{
+    margin-top: 20px;
+    font-size: 21px;
+    color: black;
+  }
+  .arw{
+    width:15px;
+    height: 15px;
+  }
+  .btn{
+    position: absolute;
+    margin-top: 20px;
+  }
+  .btn img{
+    margin-left: 5px;
+  }
+  .btn button{
+    width: 230px;
+    height: 58px;
+    cursor: pointer;
+    background: #28b67e ;
+    color: white;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    border-radius: 12px;
+    border-style: none;
+  
+    background: linear-gradient(to right, #30d291 50%, #28b67e 50%);
+    background-position: right bottom;
+    background-size: 200% 100%;
+    transition: all .3s ease;
+  }
+  
+  .btn button:hover{
+    background-position: left bottom;
+    width: 240px;
+  }
+  
+  .bgshape{
+    right: -50px;
+    animation: fadeIn3 ease .5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+  }
+  
+  .bgshape .shape{
+    right: 0;
+    top: 70px;
+      position: absolute;
+      background: #28b67e;
+      width: 620px;
+      height: 620px;
+      border-radius: 310px 310px 310px 310px;
+  }
+  
+  .front-logo img{
+    height: 390px;
+    width: 740px;
+  }
+  .front-logo{
+    animation: fadeIn2 ease 1.2s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    position: absolute;
+    right: 0px;
+    margin-top: -200px;
+  }
+  
+  /*------------------- For Android --------------------*/
+  
+  @media only screen and (max-width: 750px){
+    .container{
+      position: relative;
+      margin-top: 30px;
+      margin-left: 20px;
+      animation: fadeIn ease 1s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+  
+    .container .text{
+      font-family: sans-serif;
+    }
+    .container .text .t1{
+      line-height: 25px;
+      font-size: 21px;
+      font-weight: 200;
+      color: #30d291;
+    }
+    .container .text .t2{
+      line-height: 35px;
+      font-size: 30px;
+      font-weight: 500;
+    }
+    .container .text .t3{
+      margin-top: 15px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  
+  
+    .front-logo img{
+      height: 250px;
+      width: 400px;
+    }
+    .front-logo{
+      animation: fadeIn2 ease 1.2s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      position: absolute;
+      right: 0px;
+      margin-top: 100px;
+    }
+    .btn{
+      position: absolute;
+      margin-top: 15px;
+    }
+    .btn button{
+      width: 180px;
+      height: 58px;
+      cursor: pointer;
+      background: #14583d ;
+      color: white;
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      border-radius: 12px;
+      border-style: none;
+    
+      background: linear-gradient(to right, #30d291 50%, #14583d 50%);
+      background-position: right bottom;
+      background-size: 200% 100%;
+      transition: all .3s ease;
+    }
+    
+    .btn button:hover{
+      background-position: left bottom;
+      width: 190px;
+    }
+  
+    .arw{
+      width:13px;
+      height: 13px;
+    }
+  
+    .bgshape .shape{
+      right: 0;
+      top: 290px;
+      position: absolute;
+      background: #28b67e;
+      width: 620px;
+      height: 300px;
+      border-radius: 1150px 1150px 0px 310px;
+    }
+  
+  }
+  
+  
+  .adminlogo{
+    animation: fadeIn2 ease .6s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    position: absolute;
+    height: 100px;
+    width: 90px;
+    margin-top: -200px;
+  }
+  
+  
+   /*----------------------- Login Css ----------------------*/
+  
+  .bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 55%;
+    height: 100%;
+    background-color: rgb(197, 250, 232);
+  }
+  .bg .bg2{
+    left: -70px;
+    bottom: 0px;
+    position: absolute;
+    background: #28b67e;
+    width: 100%;
+    height: 87%;
+    border-radius: 370px 370px 0 0;
+  }
+  
+  .bg .bg3{
+    right: -5px;
+    bottom: 0px;
+    position: absolute;
+    background: #28b67e;
+    width: 148px;
+    height: 100%;
+  }
+  
+  .people{
+    position: relative;
+    margin-top: 190px;
+    margin-left: 30px;
+    
+  }
+  .people img{
+    
+    width: 680px;
+    height: 500px;
+  }
+  
+  .login-container{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 44%;
+    height: 100%;
+  }
+  .login{
+    animation: fadeIn2 ease .5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 180px;
+    margin-bottom: 40px;
+  }
+  .login .login-text{
+    line-height: 45px;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #28b67e;
+    margin-right: 30px;
+    margin-left: -45px;
+  }
+  
+  
+  .login img{
+    animation: fadeIn2 ease .6s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    height: 100px;
+    width: 90px;
+    margin-right: -50px;
+  }
+  
+  .input{
+    text-align: center;
+    animation: fadeIn2 ease .5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+  }
+  .inputfield{
+    width: 380px;
+      padding: 10px 10px;
+      margin: 10px 0;
+      border-radius: 10px;
+    border: 1px solid #30d291;
+  }
+  .checkbox{
+    margin-top: 10px;
+    margin-left: -370px;
+  }
+  span{
+      font-size: 13px;
+      left: 122px;
+      position: absolute;
+      top: 125px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .f-pass{
+    position: absolute;
+    margin-left: 255px;
+    margin-top: 10px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+  }
+  
+  .loginbtn{
+      width: 28%;
+      padding: 10px 0px;
+      cursor: pointer;
+      display: block;
+      margin: 10px auto;
+    margin-top: 30px;
+      background:#28b67e;
+      border: 0;
+      outline: none;
+      border-radius: 10px;
+      color: white;
+      font-size:18px;
+      font-weight: 700;
+      text-transform: uppercase;
+  }
+  .loginbtn:hover{
+    background:  #34e49e;
+    transition: .5s ease;
+  }
+  
+  
+  
+  /*-------------------------- Register Css ------------------------*/
+  
+  .register-container{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 44%;
+    height: 100%;
+  }
+  .register-logo{
+    animation: fadeIn2 ease .5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 200px;
+    margin-bottom: 40px;
+  }
+  .register-logo .registertext{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: black;
+    margin-bottom: -40px;
+    margin-top: -50px;
+  }
+  
+  .register-container a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: black;
+  }
+  .register-logo .logo2{
+    position: absolute;
+    height: 100px;
+    width: 90px;
+    margin-top: 200px;
+  }
+  
+  
+  /* -------------------- Forgot Password Css --------------------*/
+  
+  .forgot-container{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 44%;
+    height: 100%;
+  }
+  .forgot-logo{
+    animation: fadeIn2 ease .5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 200px;
+    margin-bottom: 40px;
+  }
+  .forgot-logo .forgottext{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: black;
+    margin-bottom: -40px;
+    margin-top: -20px;
+    position: absolute;
+  }
+  .forgot-logo .forgottext2{
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: black;
+    margin-top: 100px;
+    margin-bottom: -20px;
+  }
+  .resetbtn{
+      width: 28%;
+      padding: 10px 0px;
+      cursor: pointer;
+      display: block;
+      margin: 10px auto;
+    margin-top: 30px;
+      background:#28b67e;
+      border: 0;
+      outline: none;
+      border-radius: 10px;
+      color: white;
+      font-size:18px;
+      font-weight: 700;
+      text-transform: uppercase;
+  }
+  .resetbtn:hover{
+    background:  #34e49e;
+    transition: .5s ease;
+  }
+  .forgot-container a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: black;
+  }
+  .forgot-logo .logo2{
+    position: absolute;
+    height: 100px;
+    width: 90px;
+    margin-top: 200px;
+  }
+  
+  
+  
+  
+  /*------------------------- Reset Password Css ----------------------*/
+  
+  .reset-container{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 44%;
+    height: 100%;
+  } 
+  .reset-logo{
+    animation: fadeIn2 ease .5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 280px;
+    margin-bottom: 40px;
+  }
+  
+  .reset-logo .resettext{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: black;
+    margin-bottom: -30px;
+    margin-top: -20px;
+    position: absolute;
+  }
+  .reset-container .back{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: black;
+  }
+  
+  .reset-logo .logo2{
+    position: absolute;
+    height: 100px;
+    width: 90px;
+    margin-top: 200px;
+  }
+  
+  /*----------------------- Announcement Css ----------------------*/
+  .ann-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+  }
+  .left-panel{
+    position: absolute;
+    left: 0;
+    width: 13%;
+    height: 92.5%;
+    border-color: black;
+    background-color: #ECF4F6;
+    
+  }
+  .left-panel .left-panel-content{
+    position: absolute;
+    line-height: 40px;
+    padding-top: 50px;
+  }
+  .nav-panel{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+   
+  }
+  .nav-panel a{
+    text-decoration: none;
+    color: #1D4C4F;
+    display: flex;
+    width: 100%;
+    padding-left: 20px;
+  }
+  .nav-panel a:hover{
+    width: 100%;
+    border-left: solid  #28b67e;
+    background-color:rgb(197, 250, 232);
+    transition: 0.3s;
+  }
+  .active{
+    width: 100%;
+    border-left: solid  #28b67e;
+    background-color:rgb(197, 250, 232);
+    transition: 0.3s;
+  }
+  
+  .logout{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: #1D4C4F;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    background-color:rgb(197, 250, 232);
+    transition: 0.3s;
+  }
+  .logout:hover{
+    background-color: #34AC88;
+  }
+  
+  
+  .right-panel{
+    position: absolute;
+    right: 0;
+    width: 87%;
+    height: 90%;
+   
+  }
+  .nav-bar .nav-profile{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 820px;
+  
+  }
+  .right-panel .top-bar{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  
+    height: 80px;
+    width: 100%;
+    background: green;
+  }
+  .top-bar h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: white;
+    margin-left: -1180px;
+  }
+  .top-bar img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 50px;
+  }
+  
+  
+  
+  /*booostrap*/
+  
+  
+  /*----------------------- RESERVATION LIST CSS----------------------*/
+  .reservation-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+  }
+  .left-panel{
+    position: absolute;
+    left: 0;
+    width: 13%;
+    height: 92.5%;
+    border-color: black;
+    background-color: #ECF4F6;
+    
+  }
+  .left-panel .left-panel-content{
+    position: absolute;
+    line-height: 40px;
+    padding-top: 50px;
+  }
+  .nav-panel{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+   
+  }
+  .nav-panel a{
+    text-decoration: none;
+    color: #1D4C4F;
+    display: flex;
+    width: 100%;
+    padding-left: 20px;
+  }
+  .nav-panel a:hover{
+    width: 100%;
+    border-left: solid  #28b67e;
+    background-color:rgb(197, 250, 232);
+    transition: 0.3s;
+  }
+  .active{
+    width: 100%;
+    border-left: solid  #28b67e;
+    background-color:rgb(197, 250, 232);
+    transition: 0.3s;
+  }
+  
+  .logout{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: #1D4C4F;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    background-color:rgb(197, 250, 232);
+    transition: 0.3s;
+  }
+  .logout:hover{
+    background-color: #34AC88;
+  }
+  
+  
+  .right-panel{
+    position: absolute;
+    right: 0;
+    width: 87%;
+    height: 90%;
+   
+  }
+  
+  .nav-bar .nav-profile{
+    position:relative;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1150px;
+    margin-right: -105px;
+  
+  }
+  
+   
+  .right-panel .top-bar{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  
+    height: 80px;
+    width: 100%;
+  }
+  
+  .top-bar h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: white;
+    margin-left: -1180px;
+  }
+  .top-bar img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 50px;
+  }
+  
+  .right-panel .right-panel-layout{
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-style: double;
+    border-color: black;
+  }
+  .right-panel-layout .panel-content{
+    margin: 10px 20px 10px 20px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th{
+    background-color: #dcdcdc;
+  }
+  td{
+    padding:12 px 15px;
+   border: 1px solid #ddd;
+   text-align: center;
+  }
+  .button {
+    background-color:green;
+    color:whitesmoke;
+    position: absolute;
+    top: -60px;
+    right: 20px;
+    border: 2px solid #fff;
+    padding: 11px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+    .button:hover {
+      filter: brightness(120%);
+      color:black;
+      transition: 0.3s;
+  
+    }
+   .refresh {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 382px;
+  top: -60px;
+  
+   }
+  .right-bar p b a {
+      color: #C0C0C0;
+      font-family: Arial, Helvetica, sans-serif;
+      position: absolute;
+      width: 93px;
+      height: 20px;
+      left: 405px;
+      top: -52px;
+      font-size: 20px;
+  }
+  
+  .right-bar p b a:hover {
+    color: black;
+    transition: 0.3s;
+  }
+/* ------------------------------------------------------------------------------------------------- */
+
+.archives-container{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  .left-panel{
+    position: absolute;
+    left: 0;
+    width: 13%;
+    height: 9.5%;
+    border-color: black;
+    background-color: #ECF4F6;
+    
+  }
+  .left-panel .left-panel-content{
+    position: absolute;
+    line-height: 40px;
+    padding-top: 50px;
+  }
+  .nav-panel{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+   
+  }
+  .nav-panel a{
+    text-decoration: none;
+    color: #1D4C4F;
+    display: flex;
+    width: 100%;
+    padding-left: 20px;
+  }
+  .nav-panel a:hover{
+    width: 100%;
+    border-left: solid  #28b67e;
+    background-color:rgb(197, 250, 232);
+    transition: 0.3s;
+  }
+  .active{
+    width: 100%;
+    border-left: solid  #28b67e;
+    background-color:rgb(197, 250, 232);
+    transition: 0.3s;
+  }
+  
+
+  .logout1:hover{
+    background-color: #34AC88;
+  }
+  
+  .logout1{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: #1D4C4F;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 13%;
+    height: 35px;
+    background-color:rgb(197, 250, 232);
+    transition: 0.3s;
+  }
+  
+  .nav-bar .nav-profile{
+    position:relative;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1200px;
+    margin-right: -105px;
+    padding-left: 150px;
+  
+  }
+  .right-panel{
+    position: absolute;
+    right: 0;
+    width: 87%;
+    height: 90%;
+   
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  td{
+    padding:10px;
+    border: 1px solid #DBEAEC;
+    text-align: center;
+    font-family: ManropeRegular;
+    font-size: 14px;
+   
+   }
+  
+  tr:hover {
+    background-color: #4f95932d;
+  }
+  
+  @font-face{
+    font-family: ManropeRegular;
+    src:url(manrope-regular.otf);
+  }
+  
+  @font-face {
+    font-family: Manropexb;
+    src: url(manrope-extrabold.otf);
+    font-weight: bold;
+  }
+  th{
+    font-family: ManropeRegular;
+    font-size: 14px;
+    height: 50px;
+    background-color: #DBEAEC;
+  }
+  
+  .top-bar1 h1{
+    position: absolute;
+    width: 100%;
+    font-family: Manropexb;
+    font-size: 36px;
+    color:white;
+    left: 7.5%;
+    padding-top: 20px;
+    font-weight: 800;
+  }
+  
+  .right-panel .top-bar1{
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 152px;
+    width: 100%;
+    background-color: #1B5E20;
+  }
+  
+  .top-bar1 img{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-top: 11px;
+    left: 50px;
+  }
+  .buttonedit{
+    background: none;
+    border-color: #1B5E20;
+    font-family:InterSemiBold;
+    font-size: 12px;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 6px 16px;
+    border: 2px solid #1B5E20;
+    border-radius: 2px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    
+  }
+  .buttonedit span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .buttonedit span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .buttonedit:hover span {
+    padding-right: 25px;
+  }
+  
+  .buttonedit:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+   
+  
+  @font-face {
+    font-family: Manropexb;
+    src: url(manrope-extrabold.otf);
+    font-weight: bold;
+  }
+  
+  
+  .right-panel .right-panel-layout{
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-style: double;
+    border-color: black;
+  }
+  .right-panel-layout .panel-content{
+    margin: 10px 20px 10px 20px;
+  }
+  
+  @font-face{
+    font-family: ManropeSemiBold;
+    src:url(manrope-semibold.otf);
+  }
+  
+  @font-face{
+    font-family: ManropeRegular;
+    src:url(manrope-regular.otf);
+  }
+  
+  
+  @font-face{
+    font-family: InterSemiBold;
+    src:url(Inter-SemiBold.otf);
+  }
+  .button {
+    background-color:#1B5E20;
+    color:whitesmoke;
+    position: absolute;
+    top: -90px;
+    right: 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 6px, 16px, 6px, 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: InterSemiBold;
+  }
+  .button:hover {
+      filter: brightness(120%);
+      color:#6e7a7548;
+      transition: 0.3s;
+  
+    }
+  .refreshbtn {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 455px;
+  top: -75px;
+  
+   }
+  .right-bar p b a {
+      color: #ffffff75;
+      font-family: Arial, Helvetica, sans-serif;
+      position: absolute;
+      width: 93px;
+      height: 20px;
+      left: 481px;
+      top: -77px;
+      font-size: 20px;
+  }
+  
+  .right-bar p b a:hover {
+    color: rgba(0, 0, 0, 0.281);
+    transition: 0.3s;
+  }
+
+  @media only screen and (min-width: 1200px){
+    
+    .archives-container{
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        
+      }
+      
+      .left-panel{
+        position: absolute;
+        left: 0;
+        width: 13%;
+        height: 9.5%;
+        border-color: black;
+        background-color: #ECF4F6;
+        
+      }
+      .left-panel .left-panel-content{
+        position: absolute;
+        line-height: 40px;
+        padding-top: 50px;
+      }
+      .nav-panel{
+        font-size: 16px;
+        font-family: sans-serif;
+        font-weight: 600;
+       
+      }
+      .nav-panel a{
+        text-decoration: none;
+        color: #1D4C4F;
+        display: flex;
+        width: 100%;
+        padding-left: 20px;
+      }
+      .nav-panel a:hover{
+        width: 100%;
+        border-left: solid  #28b67e;
+        background-color:rgb(197, 250, 232);
+        transition: 0.3s;
+      }
+      .active{
+        width: 100%;
+        border-left: solid  #28b67e;
+        background-color:rgb(197, 250, 232);
+        transition: 0.3s;
+      }
+      
+    
+      .logout1:hover{
+        background-color: #34AC88;
+      }
+      
+      .logout1{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        text-decoration: none;
+        color: #1D4C4F;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        width: 13%;
+        height: 35px;
+        background-color:rgb(197, 250, 232);
+        transition: 0.3s;
+      }
+      
+      .nav-bar .nav-profile{
+        position:relative;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 1200px;
+        margin-right: -105px;
+        padding-left: 150px;
+      
+      }
+      .right-panel{
+        position: absolute;
+        right: 0;
+        width: 87%;
+        height: 90%;
+       
+      }
+      
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      
+      td{
+        padding:10px;
+        border: 1px solid #DBEAEC;
+        text-align: center;
+        font-family: ManropeRegular;
+        font-size: 14px;
+       
+       }
+      
+      tr:hover {
+        background-color: #4f95932d;
+      }
+      
+      @font-face{
+        font-family: ManropeRegular;
+        src:url(manrope-regular.otf);
+      }
+      
+      @font-face {
+        font-family: Manropexb;
+        src: url(manrope-extrabold.otf);
+        font-weight: bold;
+      }
+      th{
+        font-family: ManropeRegular;
+        font-size: 14px;
+        height: 50px;
+        background-color: #DBEAEC;
+      }
+      
+      .top-bar1 h1{
+        position: absolute;
+        width: 100%;
+        font-family: Manropexb;
+        font-size: 36px;
+        color:white;
+        left: 11.5%;
+        padding-top: 20px;
+        font-weight: 800;
+      }
+      
+      .right-panel .top-bar1{
+        
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 152px;
+        width: 100%;
+        background-color: #1B5E20;
+      }
+      
+      .top-bar1 img{
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        margin-top: 11px;
+        left: 50px;
+      }
+      .buttonedit{
+        background: none;
+        border-color: #1B5E20;
+        font-family:InterSemiBold;
+        font-size: 12px;
+        line-height: 18px;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 6px 16px;
+        border: 2px solid #1B5E20;
+        border-radius: 2px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        
+      }
+      .buttonedit span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      
+      .buttonedit span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+      
+      .buttonedit:hover span {
+        padding-right: 25px;
+      }
+      
+      .buttonedit:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+       
+      
+      @font-face {
+        font-family: Manropexb;
+        src: url(manrope-extrabold.otf);
+        font-weight: bold;
+      }
+      
+      
+      .right-panel .right-panel-layout{
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-style: double;
+        border-color: black;
+      }
+      .right-panel-layout .panel-content{
+        margin: 10px 20px 10px 20px;
+      }
+      
+      @font-face{
+        font-family: ManropeSemiBold;
+        src:url(manrope-semibold.otf);
+      }
+      
+      @font-face{
+        font-family: ManropeRegular;
+        src:url(manrope-regular.otf);
+      }
+      
+      
+      @font-face{
+        font-family: InterSemiBold;
+        src:url(Inter-SemiBold.otf);
+      }
+      .button {
+        background-color:#1B5E20;
+        color:whitesmoke;
+        position: absolute;
+        top: -90px;
+        right: 20px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        padding: 6px, 16px, 6px, 16px;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: InterSemiBold;
+      }
+      .button:hover {
+          filter: brightness(120%);
+          color:#6e7a7548;
+          transition: 0.3s;
+      
+        }
+      .refreshbtn {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      left: 455px;
+      top: -75px;
+      
+       }
+      .right-bar p b a {
+          color: #ffffff75;
+          font-family: Arial, Helvetica, sans-serif;
+          position: absolute;
+          width: 93px;
+          height: 20px;
+          left: 481px;
+          top: -77px;
+          font-size: 20px;
+      }
+      
+      .right-bar p b a:hover {
+        color: rgba(0, 0, 0, 0.281);
+        transition: 0.3s;
+      }
+  }
+
